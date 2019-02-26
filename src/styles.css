@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+/* warComponent's private CSS styles */
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+}
+
+.war {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 18em;
+}
+
+.war li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.war li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+}
+
+.war li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+
+.war .text {
+    position: relative;
+    top: -3px;
+}
+
+.war .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+.btn-group button {
+    background-color: rgb(155, 155, 155);
+    /* Green background */
+    border: 1px solid rgb(206, 212, 206);
+    /* Green border */
+    color: black;
+    /* White text */
+    padding: 10px 20px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+}
+
+
+/* Clear floats (clearfix hack) */
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+
+/* Add a background color on hover */
+
+.btn-group button:hover {
+    background-color: white;
+}

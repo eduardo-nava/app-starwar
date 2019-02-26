@@ -1,0 +1,14 @@
+<h6 tyle="text-align:center"> PERSONAS </h6>
+<!-- <pre>{{ personas | json }}</pre> -->
+<ul class="war">
+    <li *ngFor="let persona of personas; index as i" (click)="detallePersona(persona.id)">
+        <span class="badge"> {{ i + 1 }} </span> Nombre: {{persona.name}}
+    </li>
+</ul>
+
+<div class="btn-group" style="width:100%">
+    <button style="width:25%" (click)="ordenarNombre()">ORDENAR NOMBRE</button>
+    <button style="width:25%" (click)="ordenarPeso()">ORDENAR PESO</button>
+    <button style="width:25%" (click)="ordenarAltura()">ORDENAR ALTURA</button>
+    <button style="width:25%" (click)="ordenarPlaneta()">ORDENAR PLANETA</button>
+</div>

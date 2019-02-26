@@ -1,0 +1,14 @@
+<p>
+    DETALLES DE LA PERSONA: <strong>{{ personaDetalles['name'] }}</strong>
+</p>
+
+<ul>
+    <li> NOMBRE: {{ personaDetalles['name'] }} </li>
+    <li>COLOR DE OJOS: {{ personaDetalles['eye_color']}}</li>
+    <li>COLOR DE CABELLO: {{ personaDetalles['hair_color']}}</li>
+    <li>COLOR DE PIEL: {{ personaDetalles['skin_color']}}</li>
+    <li>GENERO: {{ personaDetalles['gender']}}</li>
+    <li>PLANETA: {{ personaDetalles['homeworld']}}</li>
+</ul>
+
+<a [routerLink]="['/personas']">Volver</a>
